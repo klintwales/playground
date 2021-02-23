@@ -1,0 +1,44 @@
+<!-- <html> -->
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Quick List</title>
+	<meta charset="UTF-8" />
+	<!--Bootstrap-->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+	<!--Back4App-->
+	<script type="text/javascript" src="https://npmcdn.com/parse/dist/parse.min.js"></script>
+<script type="text/javascript" type="text/javascript">
+	Parse.initialize("EIU9omRLUXGsZb7kR7wBmJ5rd48ikcLLThnNOGlG","jhS3N5QfP337S8kZp42dbvOkxUChR64nQ8xm6Fy7"); //PASTE HERE YOUR Back4App APPLICATION ID AND YOUR JavaScript KEY
+	Parse.serverURL = 'https://parseapi.back4app.com/'
+</script>
+
+</head>
+
+<body>
+
+<div id="paragraph">
+	<h1 id="hello">Log In</h1>
+  This is a simple list webpage I have been practicing with. To clear the list just reload the page.
+			<form>
+		    <img class="mb-4" src="/docs/5.0/assets/brand/bootstrap-logo.svg" alt="" width="72" height="57">
+		    <h1 class="h3 mb-3 fw-normal">Please create a user</h1>
+				<label for="logInUsername" class="visually-hidden">Username</label>
+				<input type="Username" id="logInUsername" class="form-control" placeholder="Username" required="" autofocus="" style="background-image: url(&quot;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAkCAYAAADo6zjiAAAAAXNSR0IArs4c6QAAAbNJREFUWAntV8FqwkAQnaymUkpChB7tKSfxWCie/Yb+gbdeCqGf0YsQ+hU95QNyDoWCF/HkqdeiIaEUqyZ1ArvodrOHxanQOiCzO28y781skKwFW3scPV1/febP69XqarNeNTB2KGs07U3Ttt/Ozp3bh/u7V7muheQf6ftLUWyYDB5yz1ijuPAub2QRDDunJsdGkAO55KYYjl0OUu1VXOzQZ64Tr+IiPXedGI79bQHdbheCIAD0dUY6gV6vB67rAvo6IxVgWVbFy71KBKkAFaEc2xPQarXA931ot9tyHphiPwpJgSbfe54Hw+EQHMfZ/msVEEURjMfjCjbFeG2dFxPo9/sVOSYzxmAwGIjnTDFRQLMQAjQ5pJAQkCQJ5HlekeERxHEsiE0xUUCzEO9AmqYQhiF0Oh2Yz+ewWCzEY6aYKKBZCAGYs1wuYTabKdNNMWWxnaA4gp3Yry5JBZRlWTXDvaozUgGTyQSyLAP0dbb3DtQlmcan0yngT2ekE9ARc+z4AvC7nauh9iouhpcGamJeX8XF8MaClwaeROWRA7nk+tUnyzGvZrKg0/40gdME/t8EvgG0/NOS6v9NHQAAAABJRU5ErkJggg==&quot;); background-repeat: no-repeat; background-attachment: scroll; background-size: 16px 18px; background-position: 98% 50%;" autocomplete="off">
+		    <label for="logInPassword" class="visually-hidden">Password</label>
+		    <input type="password" id="logInPassword" class="form-control" placeholder="Password" required="" style="background-image: url(&quot;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAkCAYAAADo6zjiAAAAAXNSR0IArs4c6QAAAbNJREFUWAntV8FqwkAQnaymUkpChB7tKSfxWCie/Yb+gbdeCqGf0YsQ+hU95QNyDoWCF/HkqdeiIaEUqyZ1ArvodrOHxanQOiCzO28y781skKwFW3scPV1/febP69XqarNeNTB2KGs07U3Ttt/Ozp3bh/u7V7muheQf6ftLUWyYDB5yz1ijuPAub2QRDDunJsdGkAO55KYYjl0OUu1VXOzQZ64Tr+IiPXedGI79bQHdbheCIAD0dUY6gV6vB67rAvo6IxVgWVbFy71KBKkAFaEc2xPQarXA931ot9tyHphiPwpJgSbfe54Hw+EQHMfZ/msVEEURjMfjCjbFeG2dFxPo9/sVOSYzxmAwGIjnTDFRQLMQAjQ5pJAQkCQJ5HlekeERxHEsiE0xUUCzEO9AmqYQhiF0Oh2Yz+ewWCzEY6aYKKBZCAGYs1wuYTabKdNNMWWxnaA4gp3Yry5JBZRlWTXDvaozUgGTyQSyLAP0dbb3DtQlmcan0yngT2ekE9ARc+z4AvC7nauh9iouhpcGamJeX8XF8MaClwaeROWRA7nk+tUnyzGvZrKg0/40gdME/t8EvgG0/NOS6v9NHQAAAABJRU5ErkJggg==&quot;); background-repeat: no-repeat; background-attachment: scroll; background-size: 16px 18px; background-position: 98% 50%;" autocomplete="off">
+		    <button class="w-100 btn btn-lg btn-primary" type="button" onClick="logIn()">Log In</button>
+		    <p class="mt-5 mb-3 text-muted">© 2017–2021</p>
+			</form>
+</div>
+<div id="notes">
+	<label for="Item"> Item </label>
+	<input id="Item"> </input>
+	<button id="submit" onclick="saveItem()"> Add Item </button>
+	<div id="itemParagraph"></div>
+</div>
+
+<script src="./notes.js"></script>
+</body>
+
+</html>
