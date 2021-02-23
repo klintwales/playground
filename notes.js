@@ -1,6 +1,8 @@
 Parse.initialize("EIU9omRLUXGsZb7kR7wBmJ5rd48ikcLLThnNOGlG", "jhS3N5QfP337S8kZp42dbvOkxUChR64nQ8xm6Fy7");
 Parse.serverURL = "https://parseapi.back4app.com/";
 
+document.getElementById("notes").style.visibility = "hidden";
+
 var itemArray = [];
 var username = "";
 
@@ -16,6 +18,7 @@ async function logIn(){
     console.log(document.getElementById("logInUsername").value);
     console.log(document.getElementById("logInPassword").value);
     document.getElementById("paragraph").remove();
+    document.getElementById("notes").style.visibility = "visible"
 }
 
 function getNotes(){
