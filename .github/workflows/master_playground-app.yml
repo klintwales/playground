@@ -18,8 +18,16 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      - name: List all files
-        run: find . -name "*.csproj" -o -name "*.sln"
+      - name: Debug - Check file structure (Windows)
+        run: |
+          echo "Current directory:"
+          pwd
+          echo "Contents of root:"
+          dir
+          echo "Looking for .csproj files:"
+          Get-ChildItem -Recurse -Filter "*.csproj" | Select-Object FullName
+          echo "Looking for .sln files:"
+          Get-ChildItem -Recurse -Filter "*.sln" | Select-Object FullName
 
       - name: Set up .NET Core
         uses: actions/setup-dotnet@v4
