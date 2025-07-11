@@ -18,6 +18,9 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
+      - name: List all files
+        run: find . -name "*.csproj" -o -name "*.sln"
+
       - name: Set up .NET Core
         uses: actions/setup-dotnet@v4
         with:
